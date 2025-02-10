@@ -4,6 +4,8 @@ Proyecto generado usando [Angular CLI](https://github.com/angular/angular-cli) v
 
 Se debe validar la url del servidor del proyecto Web API en el archivo environment.ts, el cual tiene configurado la url por defecto del API en https://localhost:44384. Verificar que coincidan las url del servidor API.
 
+Repositorio Web API: https://github.com/felipe1226/SalesDatePredictionAPI.git
+
 
 ## Servidor de desarrollo
 
