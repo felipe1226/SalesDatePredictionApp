@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.buttons-container{
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button.mat-button, 
+button.mat-flat-button, 
+button.mat-raised-button {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.red-theme{
+  background-color: rgb(181, 44, 45) !important;
+}
+
+.green-theme{
+  background-color: rgb(76, 153, 80) !important;
+}
+
+.red-button{
+  color: rgb(181, 44, 45) !important;
+}
+
+.green-button{
+  color: rgb(76, 153, 80) !important;
+}

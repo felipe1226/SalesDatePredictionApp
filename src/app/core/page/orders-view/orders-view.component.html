@@ -1,0 +1,10 @@
+<div class="content">
+    <app-table 
+        [displayedColumns]="displayedColumns()"
+        [data]="ordersList()"
+    />
+    <div class="buttons-container">
+        <button (click)="onClose()" mat-button class="red-button">CLOSE</button>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+<div class="main-container">
+    <div class="header">
+        <label>Sales Date Prediction App</label>
+        <img src="assets/img/icons/nserio-logo.png" alt="logo">
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="content-header">
+                <h3>Customers</h3>
+                <mat-form-field class="search-input">
+                    <mat-label>Customer Name</mat-label>
+                    <input [(ngModel)]="customerName" type="text" matInput>
+                    <mat-icon (click)="onSearch()" matSuffix>search</mat-icon>
+                </mat-form-field>
+            </div>
+    
+            <app-table 
+                [displayedColumns]="displayedColumns()"
+                [data]="salesDatePredictionList()"
+            />
+        </div>
+    </div>
+</div>
